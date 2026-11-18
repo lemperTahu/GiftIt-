@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #fff8ef;
+  color: #385447;
+  min-height: 100vh;
+}
+
+.thankyou-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 15%, #fce3df 0, transparent 25%),
+    radial-gradient(circle at 90% 85%, #dcebdc 0, transparent 28%),
+    #fff8ef;
+}
+
+.thankyou-card {
+  width: 100%;
+  max-width: 620px;
+  background: #ffffff;
+  border: 2px solid #f6e8dc;
+  border-radius: 30px;
+  padding: 45px 45px 35px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 18px 55px rgba(79, 103, 81, 0.10);
+  animation: appear 0.8s ease;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 170px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.gift-illustration {
+  width: 145px;
+  height: 145px;
+  background: #fce8e2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+}
+
+.gift-box {
+  position: relative;
+  font-size: 76px;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.gift-ribbon {
+  position: absolute;
+  width: 13px;
+  height: 55px;
+  background: #e99b91;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.gift-emoji {
+  position: relative;
+  z-index: 2;
+}
+
+.gift-bow {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  z-index: 3;
+}
+
+.small-label {
+  display: inline-block;
+  background: #edf4e9;
+  color: #65846a;
+  padding: 8px 17px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+h1 {
+  font-size: clamp(30px, 6vw, 43px);
+  line-height: 1.2;
+  font-weight: 900;
+  color: #385447;
+}
+
+h1 span {
+  display: block;
+  color: #df958b;
+  margin-top: 5px;
+}
+
+.heart-divider {
+  color: #e99b91;
+  font-size: 21px;
+  letter-spacing: 7px;
+  margin: 20px 0;
+}
+
+.thankyou-message {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #53675b;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.closing-message {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #8b9990;
+  margin-bottom: 30px;
+}
+
+.visit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #62846a;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 22px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  transition: 0.3s ease;
+  box-shadow: 0 7px 18px rgba(98, 132, 106, 0.2);
+}
+
+.visit-button:hover {
+  background: #486c53;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(98, 132, 106, 0.25);
+}
+
+.visit-button span {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.footer-note {
+  font-size: 12px;
+  color: #a0aaa2;
+  margin-top: 30px;
+}
+
+.footer-note strong {
+  color: #62846a;
+}
+
+/* Dekorasi */
+.decoration {
+  position: absolute;
+  color: #e9a49a;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+.decoration-one {
+  top: 12%;
+  left: 13%;
+  font-size: 65px;
+  transform: rotate(-15deg);
+}
+
+.decoration-two {
+  top: 20%;
+  right: 16%;
+  font-size: 55px;
+  color: #d5b16f;
+}
+
+.decoration-three {
+  bottom: 12%;
+  right: 12%;
+  font-size: 75px;
+  transform: rotate(15deg);
+}
+
+.decoration-four {
+  bottom: 20%;
+  left: 16%;
+  font-size: 50px;
+  color: #d5b16f;
+}
+
+/* Animasi */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  .thankyou-container {
+    padding: 25px 15px;
+  }
+
+  .thankyou-card {
+    padding: 35px 22px 28px;
+    border-radius: 24px;
+  }
+
+  .logo-container img {
+    max-width: 145px;
+    height: 55px;
+  }
+
+  .gift-illustration {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gift-box {
+    font-size: 65px;
+  }
+
+  .thankyou-message {
+    font-size: 14px;
+  }
+
+  .closing-message {
+    font-size: 35px;
+  }
+
+  .visit-button {
+    font-size: 14px;
+    padding: 13px 15px;
+  }
+
+  .decoration-one {
+    top: 5%;
+    left: 3%;
+    font-size: 40px;
+  }
+
+  .decoration-two {
+    top: 8%;
+    right: 4%;
+    font-size: 35px;
+  }
+
+  .decoration-three {
+    bottom: 5%;
+    right: 3%;
+    font-size: 45px;
+  }
+
+  .decoration-four {
+    bottom: 7%;
+    left: 4%;
+    font-size: 35px;
+  }
+}
