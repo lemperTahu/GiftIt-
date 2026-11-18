@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gift It! — Little Gifts, Bigger Impact.</title>
+<meta name="description" content="Paket merchandise dan souvenir custom. Hadiah kecil, dampak yang berarti.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="public-site">
+<nav class="site-nav"><div class="wrap nav-inner">
+  <a class="logo" href="#beranda">
+  <img src="assets/logo2.png" alt="Gift It!" class="logo-image">
+  </a>
+  <div class="nav-links"><a href="#beranda">Beranda</a><a href="#katalog">Katalog</a><a href="#donasi">Cerita Kebaikan</a></div>
+  <a class="btn nav-cta" data-wa href="#">Pesan sekarang <span aria-hidden="true">↗</span></a>
+</div></nav>
+<main>
+<header class="hero" id="beranda"><div class="wrap hero-grid">
+  <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> HADIAH KECIL, ARTI BESAR</span>
+    <h1>Berbagi kebahagiaan,<br><em>satu hadiah</em> dalam satu waktu.</h1>
+    <span class="tag" data-tagline>Little Gifts, Bigger Impact.</span>
+    <p>Paket merchandise, jajanan, dan barang-barang lucu yang bisa kamu sesuaikan dengan tema acara serta anggaran. Setiap paket terjual juga ikut membawa kebaikan.</p>
+    <div class="cta"><a class="btn" href="#katalog">Jelajahi katalog <span>↓</span></a><a class="btn btn-ghost" data-wa href="#">Konsultasi pesanan <span>↗</span></a></div>
+    <div class="hero-note"><span class="note-icon">♡</span><span>Dikemas dengan senang hati, disalurkan dengan berarti.</span></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustrasi hadiah dan merchandise"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-sticker sticker-top">made with love</div><div class="gift-main"><span>🎁</span></div><div class="float-card float-cookie">🍪<small>sweet treats</small></div><div class="float-card float-key">🔑<small>little things</small></div><div class="float-card float-note">💌<small>for you!</small></div><div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div></div>
+</div></header>
+<section class="stats-section"><div class="wrap stats" id="stats" aria-live="polite">
+  <div class="stat"><span class="stat-icon">📦</span><div><b data-s="sold">–</b><span>paket telah terjual</span></div></div>
+  <div class="stat"><span class="stat-icon">💚</span><div><b data-s="donation">–</b><span>donasi terkumpul</span></div></div>
+  <div class="stat"><span class="stat-icon">🎀</span><div><b data-s="packages">–</b><span>pilihan di katalog</span></div></div>
+</div></section>
+<section id="katalog" class="catalog-section"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">TEMUKAN YANG KAMU SUKA</span><h2>Hadiah kecil, <em>kesan besar.</em></h2></div><p class="sub">Pilih inspirasi paket yang tersedia, atau ceritakan kebutuhan acaramu. Kami bantu sesuaikan!</p></div>
+  <div class="grid product-grid" id="products"><div class="empty">Sedang menyiapkan katalog untukmu…</div></div>
+  <div class="custom"><div class="custom-copy"><span class="custom-icon">✳</span><span class="eyebrow">PUNYA IDE SENDIRI?</span><h3>Bikin paket versimu!</h3><p>Tentukan tema, jumlah, budget, dan isi merchandise. Kami bantu wujudkan paket yang pas untuk acaramu.</p><div class="custom-points"><span>✓ Fleksibel sesuai budget</span><span>✓ Bisa request tema acara</span></div></div>
+    <form id="customForm" class="custom-form">
+      <div><label for="c1">Tema acara</label><input id="c1" name="tema" required maxlength="120" placeholder="Contoh: Seminar kampus"></div>
+      <div class="form-two"><div><label for="c2">Jumlah paket</label><input id="c2" name="jumlah" type="number" min="1" max="100000" required placeholder="100"></div><div><label for="c3">Budget</label><input id="c3" name="budget" required maxlength="60" placeholder="Rp500.000"></div></div>
+      <div><label for="c4">Merchandise yang diinginkan</label><input id="c4" name="isi" required maxlength="200" placeholder="Snack, stiker, gantungan kunci…"></div>
+      <button class="btn btn-light" type="submit">Diskusikan paket custom <span>↗</span></button>
+    </form>
+  </div>
+</div></section>
+<section id="donasi" class="impact-section"><div class="wrap impact-grid"><div class="impact-copy"><span class="eyebrow">SMALL GIFT, BIGGER IMPACT</span><h2>Belanja sambil<br><em>berbagi kebaikan.</em></h2><p>Di setiap paket yang terjual, ada bagian yang kami sisihkan untuk donasi. Kami percaya hal sederhana bisa menjadi berarti ketika dilakukan bersama.</p><div class="impact-equation"><span>Setiap paket terjual</span><b>+</b><span>Donasi per paket</span><b>=</b><strong>Dampak baik ♡</strong></div></div>
+  <div class="impact-card"><div class="impact-card-head"><span>♡ Transparansi donasi</span><span class="live-dot">● DATA TERKINI</span></div><div class="impact-total"><small>Total donasi terkumpul</small><b data-s="donation">–</b></div><div class="impact-breakdown"><div><span>Paket terjual</span><b data-s="sold">–</b></div><div><span>Donasi per paket</span><b id="perPkg">–</b></div><div><span>Sudah disalurkan</span><b data-s="disbursed">–</b></div></div><p class="impact-foot">Donasi dihitung dari paket terjual × <b id="perPkg2">–</b> per paket. Terima kasih sudah ikut berbagi ♡</p></div>
+</div></section>
+<section class="gallery-section"><div class="wrap"><div class="section-head"><div><span class="eyebrow">CERITA DI BALIK SETIAP DONASI</span><h2>Kebaikan yang <em>terus bergerak.</em></h2></div><p class="sub">Lihat dokumentasi kegiatan penyaluran donasi dari Gift It! sebagai bentuk keterbukaan kami.</p></div><div class="grid gallery-grid" id="gallery"><div class="empty">Memuat cerita kebaikan…</div></div></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-main"><div>
+  <a class="logo footer-logo" href="#beranda">
+  <img src="assets/logo.png" alt="Gift It!" class="logo-footer-image">
+  </a>
+<small data-contact></small></div><div class="footer-action"><span>Siap bikin acara jadi lebih berkesan?</span><a class="btn btn-light" data-wa href="#">Hubungi kami <span>↗</span></a></div></div><div class="wrap footer-bottom"><span>© <span id="yr"></span> <span data-brand>Gift It!</span>. Made with ♡</span><a href="admin.html">Admin</a></div></footer>
+<script type="module" src="js/public.js"></script>
+</body></html>
